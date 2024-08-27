@@ -1,6 +1,6 @@
 # Hatched
 
-Since the game is public on the platform, I prefer not to publicly share access to the source code due to privacy concerns. This repository contains limited, low-importance snippets that display some basic game functionality. If you're interested in seeing more advanced features, please feel free to reach out, and I’d be happy to share access to the full project.
+Since the game is public on the platform, I prefer not to publicly share access to the source code due to privacy concerns. This repository contains limited, low-importance snippets that display some basic game functionality. If you're interested in seeing more advanced features please feel free to reach out and I’d be happy to share access to the full project.
 
 Developed a pet-breeding game on Roblox using Lua over some several months. Due to the project's extensive scope, which exceeds 50,000 lines of code, the repository contains key snippets and relevant modules to showcase the core functionalities. Some referenced modules might not be included in this directory, which is why certain components may be missing.
 
