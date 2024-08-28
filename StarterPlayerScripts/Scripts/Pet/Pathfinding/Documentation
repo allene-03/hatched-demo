@@ -1,0 +1,25 @@
+-- This script only displays the connections between client/server to trigger client's control of the pet model (client is given NetworkOwnership of the model to reduce stress on server)
+-- and does not feature the pathfinding itself which uses raycasting and physical calculations ('Client/NonclientWrapper')
+
+--[[
+Settings:
+- For each pet (Found in Configuration module script under given pet folder)
+	- WalkAnimationSpeed: How fast you want the walking animation speed to go normally (without it running)
+	- Fly: Decides if the pet is flying or not
+		Flying settings:
+		- FlyHeight: How high you want the pet's resting flying distance to be vertically
+		- Bob: If you want the pet to have the bobbing up and down effect
+			Bob settings:
+			- FlyBobAmplitude: How vertically great in distance you want the bob effect to go
+			- FlyBobFrequency: How frequently you want bobbing effect to occur
+
+- For the entire system (found in ReplicatedStorage)
+	- Speed: How fast the pets will go when they aren't immediately besides the player (for example, moving back to ideal position or pathfinding)
+	- IdealDistance: The distance the pet will maintain away from the character
+	- JumpTime: How long they are supposed to jump before they land
+	- JumpHeight: How high the pets are supposed to jump
+	- TurnSpeed: How long it will take before pets turn around
+	- TeleportRetryComputationRate: How frequently it will check before teleportation
+	- RefreshRate: The rate at which raychecks and other checks are performed
+	- PathfindingTimeout: Will keep looking for path if NoPath returned until it reaches this amount of time at which point it will teleport you to player
+]]
